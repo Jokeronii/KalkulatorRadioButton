@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Kalkulator">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KALKULATOR SEDERHANA"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/angka1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="masukkan angka 1"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/angka2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="masukkan angka 2"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/opsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tbltambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:onClick="hitung"
+            android:text="TAMBAH"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/tblkurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:onClick="kurang"
+            android:text="KURANG"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/tblkali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:onClick="kali"
+            android:text="KALI"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/tblbagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:onClick="bagi"
+            android:text="BAGI"
+            android:textSize="15dp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/hasilhitung"
+            android:layout_width="150dp"
+            android:text="HASIL"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>
+
